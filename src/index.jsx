@@ -13,8 +13,6 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from './App';
 
-import './style.scss';
-
 const root = document.getElementById('root');
 
 const render = (Component) => {
@@ -29,5 +27,7 @@ const render = (Component) => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept('./App', () => { render(App); });
+  module.hot.accept('./App', () => {
+    render(App);
+  });
 }

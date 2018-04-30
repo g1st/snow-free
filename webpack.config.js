@@ -32,9 +32,23 @@ module.exports = {
         exclude: /node_modules/,
         loaders: ['babel-loader'],
       },
+      // loader: 'style-loader!css-loader!sass-loader',
       {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader',
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              importLoaders: 1,
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+            },
+          },
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -54,9 +68,6 @@ module.exports = {
   },
   mode: dev ? 'development' : 'production',
   plugins: dev
-    ? [
-      HTMLWebpackPluginConfig,
-      new webpack.HotModuleReplacementPlugin(),
-    ]
+    ? [HTMLWebpackPluginConfig, new webpack.HotModuleReplacementPlugin()]
     : [HTMLWebpackPluginConfig, DefinePluginConfig],
 };
