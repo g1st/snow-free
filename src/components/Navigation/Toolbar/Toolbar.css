@@ -1,4 +1,15 @@
 .Toolbar {
   height: 100px;
+  width: 100%;
+  position: fixed;
   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  border: 1px dashed black;
+}
+
+@media (max-width: 1000px) {
+  .DesktopOnly {
+    display: none;
+  }
 }
