@@ -2,13 +2,13 @@
   height: 100px;
   width: 100%;
   position: fixed;
-  background-color: grey;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
-  border: 1px dashed black;
+  z-index: 1;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .DesktopOnly {
     display: none;
   }

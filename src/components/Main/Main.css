@@ -1,0 +1,24 @@
+.Main {
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.Background {
+  background-image: url('../../assets/benjamin-child-90768-unsplash.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.BackgroundOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
