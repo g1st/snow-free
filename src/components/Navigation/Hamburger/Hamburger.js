@@ -1,25 +1,20 @@
 import React from 'react';
+import Close from './Close/Close';
 
 import classes from './Hamburger.css';
 
-const Hamburger = (props) => {
-  let icon = (
-    <div className={classes.Hamburger} onClick={props.onClickHamburger}>
-      <div />
-      <div />
-      <div />
-    </div>
-  );
-
-  if (props.menuOpen) {
-    icon = (
-      <div className={classes.Close} onClick={props.onClickHamburger}>
-        &times;
+const hamburger = props => (
+  <div className={classes.HamburgerContainer}>
+    {props.menuOpen ? (
+      <Close clicked={props.onClickHamburger} />
+    ) : (
+      <div className={classes.Hamburger} onClick={props.onClickHamburger}>
+        <div />
+        <div />
+        <div />
       </div>
-    );
-  }
+    )}
+  </div>
+);
 
-  return <div className={classes.HamburgerContainer}>{icon}</div>;
-};
-
-export default Hamburger;
+export default hamburger;

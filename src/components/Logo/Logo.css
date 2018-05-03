@@ -1,5 +1,6 @@
 .Logo {
   padding: 30px 20px;
+  z-index: 9999;
 }
 
 .Logo img {

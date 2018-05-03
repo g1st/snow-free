@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   flex-flow: column;
+  z-index: 9999;
 }
 
 .Hamburger {
@@ -31,10 +32,11 @@
   font-size: 2rem;
   cursor: pointer;
   margin: 0;
+  user-select: none;
 }
 
 @media (min-width: 1000px) {
-  .HamburgerContainer {
+  .Hamburger {
     display: none;
   }
 }
