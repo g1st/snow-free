@@ -6,6 +6,11 @@
   letter-spacing: 2px;
 }
 
-.NavigationItem:last-of-type {
-  margin-right: 0;
+.NavigationItemInDropdown {
+  display: block;
+  margin-right: 20px;
+  color: rgb(206, 206, 206);
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
 }

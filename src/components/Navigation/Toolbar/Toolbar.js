@@ -8,17 +8,19 @@ import Dropdown from '../Dropdown/Dropdown';
 
 const Toolbar = props => (
   <header className={classes.Toolbar}>
-    <Logo />
-    <Hamburger
-      menuOpen={props.menuOpen}
-      onClickHamburger={props.onClickHamburger}
-    />
-    <Dropdown open={props.menuOpen} />
-    {props.menuOpen ? null : (
-      <nav className={classes.DesktopOnly}>
-        <NavigationItems />
-      </nav>
-    )}
+    <div className={classes.Wrapper}>
+      <Logo />
+      <Hamburger
+        menuOpen={props.menuOpen}
+        onClickHamburger={props.onClickHamburger}
+      />
+      <Dropdown inDropdown={props.menuOpen} />
+      {props.menuOpen ? null : (
+        <nav className={classes.DesktopOnly}>
+          <NavigationItems />
+        </nav>
+      )}
+    </div>
   </header>
 );
 

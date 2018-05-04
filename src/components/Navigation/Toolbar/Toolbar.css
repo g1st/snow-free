@@ -1,11 +1,21 @@
 .Toolbar {
   height: 100px;
   width: 100%;
+  text-align: center;
+  margin: 0 auto;
   position: fixed;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   z-index: 1;
+}
+
+.Wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 999px) {

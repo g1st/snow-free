@@ -1,22 +1,16 @@
 .Dropdown {
-  position: fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   background: url('../../../assets/simon-fitall-530083-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.List {
-  color: white;
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5rem;
-  list-style-type: none;
+  z-index: 1;
 }
 
 .Close {

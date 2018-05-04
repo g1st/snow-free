@@ -8,6 +8,20 @@
   height: 100%;
 }
 
+.NavItemsInDropdown {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  /* flex-flow: column; */
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 100%; */
+  font-size: 3rem;
+  list-style-type: none;
+}
+
 @media (min-width: 1000px) {
   .NavigationItems {
     flex-flow: row;
