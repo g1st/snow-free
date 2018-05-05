@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import Main from '../../components/Main/Main';
+import Hero from '../../components/Hero/Hero';
 
 import classes from './Layout.css';
 
@@ -24,8 +24,8 @@ class Layout extends Component {
             menuOpen={this.state.showDropdownMenu}
             onClickHamburger={this.menuClickHandler}
           />
-          <Main />
-          <main>{this.props.children}</main>
+          <Hero />
+          <div>{this.props.children}</div>
         </div>
       </Fragment>
     );
