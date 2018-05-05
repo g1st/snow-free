@@ -8,7 +8,7 @@ const backdrop = (props) => {
     attachedClasses = [classes.Backdrop, classes.Visible];
   }
 
-  return <div className={attachedClasses.join(' ')} />;
+  return <div className={attachedClasses.join(' ')}>{props.children}</div>;
 };
 
 export default backdrop;

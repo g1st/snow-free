@@ -1,9 +1,10 @@
 .Logo {
   padding: 30px 20px;
-  z-index: 200;
-  /* display: flex; */
+  z-index: 2;
+  display: flex;
 }
 
 .Logo img {
   height: 100%;
+  width: 30px;
 }

@@ -4,13 +4,34 @@
   text-transform: uppercase;
   color: rgb(206, 206, 206);
   letter-spacing: 2px;
+  user-select: none;
+  transition: color 0.2s ease-out;
+}
+
+.NavigationItem:hover {
+  cursor: pointer;
+  color: #fff;
 }
 
 .NavigationItemInDropdown {
   display: block;
-  margin-right: 20px;
   color: rgb(206, 206, 206);
   letter-spacing: 2px;
   text-align: center;
   display: flex;
+  transition: color 0.2s ease-out;
+}
+
+.NavigationItemInDropdown:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.DarkTextColor {
+  color: rgb(128, 128, 128);
+  transition: color 0.2s ease-out;
+}
+
+.DarkTextColor:hover {
+  color: #000;
 }

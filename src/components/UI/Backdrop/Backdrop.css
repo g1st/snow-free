@@ -2,16 +2,14 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 100;
   left: 0;
   top: 0;
-  /* background: url('../../../assets/simon-fitall-530083-unsplash.jpg');
-  background-color: rgba(0, 0, 0, 0.7); */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../../../assets/simon-fitall-530083-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  user-select: none;
 }
 
 .Visible {

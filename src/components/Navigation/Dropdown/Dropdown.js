@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import Backdrop from '../../UI/Backdrop/Backdrop';
+import Footer from './Footer/Footer';
 
 import classes from './Dropdown.css';
 
@@ -13,10 +14,12 @@ const dropdown = (props) => {
 
   return (
     <Fragment>
-      <Backdrop show={props.inDropdown} />
-      <nav className={attachedClassess.join(' ')}>
-        <NavigationItems inDropdown />
-      </nav>
+      <Backdrop show={props.inDropdown}>
+        <nav className={attachedClassess.join(' ')}>
+          <NavigationItems inDropdown />
+        </nav>
+        <Footer />
+      </Backdrop>
     </Fragment>
   );
 };

@@ -14,11 +14,9 @@
   height: 100%;
   justify-content: center;
   margin: 0;
-  /* flex-flow: column; */
-  /* justify-content: center; */
+  padding: 0;
   align-items: center;
-  /* height: 100%; */
-  font-size: 3rem;
+  font-size: 2rem;
   list-style-type: none;
 }
 

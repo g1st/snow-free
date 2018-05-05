@@ -1,0 +1,32 @@
+.Container {
+  font-size: 1rem;
+  color: rgb(216, 216, 216);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0;
+}
+
+.Social {
+  padding: 30px;
+  list-style-type: none;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  max-width: 100px;
+  width: 100%;
+}
+
+/* .Social:hover {
+  cursor: pointer;
+} */
+
+.Social li {
+  display: flex;
+}
+
+.Social li:hover {
+  color: #fff;
+  cursor: pointer;
+}
