@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
+
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Hero from '../../components/Hero/Hero';
+import About from '../../components/About/About';
 
 import classes from './Layout.css';
 
@@ -18,13 +20,15 @@ class Layout extends Component {
 
   render() {
     return (
-      <Fragment>
+      <Fragment name="scrollToAbout">
         <div className={classes.Container}>
           <Toolbar
             menuOpen={this.state.showDropdownMenu}
             onClickHamburger={this.menuClickHandler}
           />
           <Hero />
+
+          <About />
           <div>{this.props.children}</div>
         </div>
       </Fragment>
