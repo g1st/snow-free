@@ -1,0 +1,75 @@
+@value colors: '../../style.css';
+@value black, white-dark from colors;
+
+.Brag {
+  background-color: black;
+  height: 400px;
+  padding: 70px 10px;
+}
+
+.Wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.Icon {
+  color: white-dark;
+  /* because icons have slightly different width */
+  width: 36px;
+  font-size: 2rem;
+}
+
+.IconWrapper {
+  display: flex;
+}
+
+.Info {
+  display: flex;
+  flex-flow: column;
+  margin-left: 20px;
+}
+
+.Number {
+  color: white-dark;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.Title {
+  color: white-dark;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 760px) {
+  .Brag {
+    height: auto;
+  }
+
+  .Wrapper {
+    width: 760px;
+    max-width: 1200px;
+    height: unset;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+
+  .IconWrapper {
+    margin: 10px 0;
+    padding: 10px;
+    width: 320px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Wrapper {
+    width: 100%;
+  }
+  .IconWrapper {
+    width: 240px;
+  }
+}
