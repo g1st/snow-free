@@ -1,3 +1,6 @@
+@value colors: '../../../style.css';
+@value grey-light from colors;
+
 .HamburgerContainer {
   position: relative;
   width: 30px;
@@ -28,7 +31,7 @@
 }
 
 .Close {
-  color: rgb(216, 216, 216);
+  color: grey-light;
   font-size: 2rem;
   cursor: pointer;
   margin: 0;

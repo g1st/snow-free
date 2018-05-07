@@ -1,6 +1,9 @@
+@value colors: '../../../../style.css';
+@value grey-light from colors;
+
 .Container {
   font-size: 1rem;
-  color: rgb(216, 216, 216);
+  color: grey-light;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -17,10 +20,6 @@
   max-width: 100px;
   width: 100%;
 }
-
-/* .Social:hover {
-  cursor: pointer;
-} */
 
 .Social li {
   display: flex;

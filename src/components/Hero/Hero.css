@@ -1,3 +1,6 @@
+@value colors: '../../style.css';
+@value grey-light from colors;
+
 .Hero {
   max-height: 1200px;
   min-height: 550px;
@@ -63,9 +66,9 @@
   margin: -74px auto 0;
   height: 50px;
   width: 50px;
-  border: 1px solid rgb(216, 216, 216);
+  border: 1px solid grey-light;
   border-radius: 50%;
-  color: rgb(216, 216, 216);
+  color: grey-light;
   font-size: 1rem;
   display: flex;
   justify-content: center;

@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const values = require('postcss-modules-values');
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -46,6 +47,12 @@ module.exports = {
               importLoaders: 1,
               modules: true,
               localIdentName: '[name]__[local]___[hash:base64:5]',
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              values: true,
             },
           },
         ],
