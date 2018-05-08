@@ -27,7 +27,7 @@ const hero = () => (
         </div>
       </div>
     </div>
-    <Link to="scrollToAbout" smooth duration={500}>
+    <Link to="scrollToAbout" smooth duration={500} offset={-100}>
       <div className={classes.ScrollDown}>v</div>
     </Link>
   </div>

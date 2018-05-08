@@ -1,0 +1,53 @@
+.ProjectsGrid {
+  margin: 0 10px;
+  max-width: 1200px;
+}
+
+.Container {
+  /* display: flex;
+  flex-flow: column; */
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: stretch;
+}
+
+.Item {
+  position: relative;
+  border: 1px solid;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  background-image: url('../../../assets/project_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Item:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+/* import Project_1 from '../../../assets/project_1.jpg';
+import Project_2 from '../../../assets/project_2.jpg';
+import Project_3 from '../../../assets/project_3.jpg';
+import Project_4 from '../../../assets/project_4.jpg';
+import Project_5 from '../../../assets/project_5.jpg';
+import Project_6 from '../../../assets/project_6.jpg';
+import Project_7 from '../../../assets/project_7.jpg';
+import Project_8 from '../../../assets/project_8.jpg';
+import Project_9 from '../../../assets/project_9.jpg'; */
+.Project div {
+}
+
+@media (min-width: 760px) {
+  .Container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

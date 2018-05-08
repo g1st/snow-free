@@ -4,6 +4,7 @@ import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Hero from '../../components/Hero/Hero';
 import About from '../../components/About/About';
 import Brag from '../../components/Brag/Brag';
+import Projects from '../../components/Projects/Projects';
 
 import classes from './Layout.css';
 
@@ -30,6 +31,7 @@ class Layout extends Component {
           <Hero />
           <About />
           <Brag />
+          <Projects />
           <div>{this.props.children}</div>
         </div>
       </Fragment>

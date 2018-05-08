@@ -1,13 +1,12 @@
 @value colors: '../../style.css';
 @value black, grey-dark from colors;
 
-.About {
-  margin: 30px 10px;
+.Projects {
+  /* height: 1000px; */
 }
 
 .Wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .Heading {
@@ -25,10 +24,9 @@
 }
 
 @media (min-width: 1000px) {
-  .About {
+  .Wrapper {
     margin: 80px 0;
   }
-
   .Heading {
     margin-bottom: 40px;
     font-size: 2.65rem;
