@@ -1,0 +1,52 @@
+@value colors: '../../style.css';
+@value black from colors;
+
+.Container {
+  background-color: black;
+  position: relative;
+  height: 500px;
+}
+
+.TestimonialsContainer {
+  transform: translateY(-50%);
+  min-height: 300px;
+  height: 100%;
+}
+
+.Testimonials {
+  background-color: black;
+  height: 100%;
+}
+
+.CarouselItem {
+  /* text-align: center; */
+  /* display: flex; */
+}
+
+.Quote {
+  color: #fff;
+}
+
+.Author {
+  color: #fff;
+}
+
+:global(.slick-dots li button:before) {
+  color: #fff;
+}
+
+:global(.slick-slide) {
+  text-align: center;
+}
+
+:global(.slick-slide::before) {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+:global(.slick-slide) .Testimonials__CarouselItem___2hBnk {
+  vertical-align: middle;
+  display: inline-block;
+}
