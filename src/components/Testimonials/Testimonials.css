@@ -1,9 +1,6 @@
 @value colors: '../../style.css';
 @value black from colors;
 
-.Testimonials {
-}
-
 .CarouselItem {
   outline: none;
   cursor: pointer;

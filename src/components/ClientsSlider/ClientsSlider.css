@@ -1,0 +1,39 @@
+.ClientsSlider {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ClientsSlider :global(.slick-slide) {
+  text-align: center;
+  display: table !important;
+  cursor: pointer;
+}
+
+.ClientsSlider :global(.slick-slide div) {
+  outline: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ClientsSlider :global(.slick-slide img) {
+  height: auto;
+  width: 100px;
+  filter: grayscale(100%);
+  margin: 0 auto;
+}
+
+.ClientsSlider :global(.slick-track) {
+  height: 200px;
+}
+
+@media (min-width: 760px) {
+  .ClientsSlider :global(.slick-slide img) {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ClientsSlider :global(.slick-slide img) {
+    width: 200px;
+  }
+}

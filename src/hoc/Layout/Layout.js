@@ -6,18 +6,32 @@ import About from '../../components/About/About';
 import Brag from '../../components/Brag/Brag';
 import Projects from '../../components/Projects/Projects';
 import Testimonials from '../../components/Testimonials/Testimonials';
+import ClientsSlider from '../../components/ClientsSlider/ClientsSlider';
 
 import classes from './Layout.css';
 
 class Layout extends Component {
   constructor(props) {
     super(props);
-    this.state = { showDropdownMenu: false };
+    this.state = { showDropdownMenu: false, width: 0 };
   }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth });
+  };
 
   menuClickHandler = () => {
     this.setState(prevState => ({
-      showDropdownMenu: !prevState.showDropdownMenu,
+      showDropdownMenu: !prevState.showDropdownMenu
     }));
   };
 
@@ -34,6 +48,7 @@ class Layout extends Component {
           <Brag />
           <Projects />
           <Testimonials />
+          <ClientsSlider width={this.state.width} />
           <div>{this.props.children}</div>
         </div>
       </Fragment>
