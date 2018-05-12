@@ -1,6 +1,9 @@
 @value colors: '../../style.css';
 @value black from colors;
 
+.Testimonials {
+}
+
 .CarouselItem {
   outline: none;
   cursor: pointer;
@@ -21,20 +24,20 @@
   font-size: 1rem;
 }
 
-:global(.slick-dots) {
+.Testimonials :global(.slick-dots) {
   position: absolute;
   bottom: 25px;
 }
 
-:global(.slick-dots li.slick-active button:before) {
+.Testimonials :global(.slick-dots li.slick-active button:before) {
   color: #fff;
 }
 
-:global(.slick-dots li button:before) {
+.Testimonials :global(.slick-dots li button:before) {
   color: #fff;
 }
 
-:global(.slick-slide) {
+.Testimonials :global(.slick-slide) {
   min-height: 500px;
   background: black;
   text-align: center;
@@ -42,7 +45,7 @@
   display: table !important;
 }
 
-:global(.slick-slide div) {
+.Testimonials :global(.slick-slide div) {
   display: table-cell;
   vertical-align: middle;
 }
