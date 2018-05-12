@@ -7,6 +7,7 @@ import Brag from '../../components/Brag/Brag';
 import Projects from '../../components/Projects/Projects';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ClientsSlider from '../../components/ClientsSlider/ClientsSlider';
+import BlogSlider from './../../components/BlogSlider/BlogSlider';
 
 import classes from './Layout.css';
 
@@ -31,7 +32,7 @@ class Layout extends Component {
 
   menuClickHandler = () => {
     this.setState(prevState => ({
-      showDropdownMenu: !prevState.showDropdownMenu
+      showDropdownMenu: !prevState.showDropdownMenu,
     }));
   };
 
@@ -49,6 +50,7 @@ class Layout extends Component {
           <Projects />
           <Testimonials />
           <ClientsSlider width={this.state.width} />
+          <BlogSlider width={this.state.width} />
           <div>{this.props.children}</div>
         </div>
       </Fragment>

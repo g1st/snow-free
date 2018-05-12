@@ -1,0 +1,104 @@
+@value colors: '../../../style.css';
+@value black, grey-dark from colors;
+
+.BlogSlides {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Card {
+  box-sizing: border-box;
+}
+
+.CardContent {
+  background-color: transparent;
+  padding: 20px;
+}
+
+.CardInner {
+  box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.CardImage {
+  position: relative;
+}
+
+.CardTag {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 5%;
+  left: 3%;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.Heading {
+  margin: 16px 10px 16px 20px;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.Paragraph {
+  display: inline-block;
+  padding-top: 20px;
+  color: grey-dark;
+  line-height: 24px;
+  max-width: 740px;
+  margin: 0 10px 30px 20px;
+}
+
+.Date {
+  text-transform: uppercase;
+  margin: 0 10px 0 20px;
+  font-size: 0.95rem;
+  color: black;
+}
+
+.BlogSlides :global(.slick-slide) {
+  text-align: center;
+  display: table !important;
+  cursor: move;
+}
+
+.BlogSlides :global(.slick-slide div) {
+  outline: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.BlogSlides :global(.slick-slide img) {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.BlogSlides :global(.slick-dots) {
+  position: absolute;
+  bottom: 25px;
+}
+
+.BlogSlides :global(.slick-track) {
+  margin-bottom: 60px;
+}
+
+.BlogSlides :global(.slick-list) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 800px) {
+  .Heading {
+    font-size: 1.75rem;
+  }
+  .BlogSlides :global(.slick-track) {
+    margin-bottom: 100px;
+  }
+  .BlogSlides :global(.slick-list) {
+    margin-bottom: 32px;
+  }
+}
