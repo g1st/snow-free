@@ -23,6 +23,8 @@ const clientsSlider = (props) => {
 
   const settings = {
     arrows: false,
+    infinite: true,
+    swipeToSlide: true,
     slidesToShow,
   };
 

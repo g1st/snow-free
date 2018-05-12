@@ -6,7 +6,7 @@
 .ClientsSlider :global(.slick-slide) {
   text-align: center;
   display: table !important;
-  cursor: pointer;
+  cursor: move;
 }
 
 .ClientsSlider :global(.slick-slide div) {

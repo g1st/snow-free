@@ -1,12 +1,13 @@
 @value colors: '../../style.css';
-@value black,
-grey-dark from colors;
+@value black, grey-dark from colors;
+
 .Projects {
   padding-bottom: 40px;
 }
 
 .Wrapper {
   margin-top: 50px;
+  text-align: center;
 }
 
 .Heading {
@@ -21,6 +22,8 @@ grey-dark from colors;
   text-align: center;
   margin-bottom: 30px;
   line-height: 24px;
+  max-width: 740px;
+  display: inline-block;
 }
 
 @media (min-width: 1000px) {
