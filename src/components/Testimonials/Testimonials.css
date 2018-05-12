@@ -1,33 +1,32 @@
 @value colors: '../../style.css';
 @value black from colors;
 
-.Container {
-  background-color: black;
-  position: relative;
-  height: 500px;
-}
-
-.TestimonialsContainer {
-  transform: translateY(-50%);
-  min-height: 300px;
-  height: 100%;
-}
-
-.Testimonials {
-  background-color: black;
-  height: 100%;
-}
-
 .CarouselItem {
-  /* text-align: center; */
-  /* display: flex; */
+  outline: none;
+  cursor: pointer;
+  max-width: 715px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .Quote {
   color: #fff;
+  font-size: 1.5rem;
+  line-height: 36px;
 }
 
 .Author {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+:global(.slick-dots) {
+  position: absolute;
+  bottom: 25px;
+}
+
+:global(.slick-dots li.slick-active button:before) {
   color: #fff;
 }
 
@@ -36,17 +35,14 @@
 }
 
 :global(.slick-slide) {
+  min-height: 500px;
+  background: black;
   text-align: center;
+  color: #fff;
+  display: table !important;
 }
 
-:global(.slick-slide::before) {
-  content: '';
-  display: inline-block;
-  height: 100%;
+:global(.slick-slide div) {
+  display: table-cell;
   vertical-align: middle;
-}
-
-:global(.slick-slide) .Testimonials__CarouselItem___2hBnk {
-  vertical-align: middle;
-  display: inline-block;
 }
