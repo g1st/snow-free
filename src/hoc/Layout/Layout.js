@@ -8,8 +8,7 @@ import Projects from '../../components/Projects/Projects';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ClientsSlider from '../../components/ClientsSlider/ClientsSlider';
 import BlogSlider from './../../components/BlogSlider/BlogSlider';
-
-import classes from './Layout.css';
+import Contact from '../../components/Contact/Contact';
 
 class Layout extends Component {
   constructor(props) {
@@ -32,14 +31,14 @@ class Layout extends Component {
 
   menuClickHandler = () => {
     this.setState(prevState => ({
-      showDropdownMenu: !prevState.showDropdownMenu,
+      showDropdownMenu: !prevState.showDropdownMenu
     }));
   };
 
   render() {
     return (
       <Fragment>
-        <div className={classes.Container} name="scrollToAbout">
+        <div name="scrollToAbout">
           <Toolbar
             menuOpen={this.state.showDropdownMenu}
             onClickHamburger={this.menuClickHandler}
@@ -51,6 +50,7 @@ class Layout extends Component {
           <Testimonials />
           <ClientsSlider width={this.state.width} />
           <BlogSlider width={this.state.width} />
+          <Contact />
           <div>{this.props.children}</div>
         </div>
       </Fragment>

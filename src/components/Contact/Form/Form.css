@@ -1,0 +1,41 @@
+.Form {
+  margin: 30px 10px 80px 10px;
+}
+
+.Row {
+  display: flex;
+  flex-flow: column;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border: none;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+textarea {
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 760px) {
+  .Name {
+    margin-right: 15px;
+  }
+  .Email {
+    margin-left: 15px;
+  }
+  .Row {
+    flex-flow: row;
+  }
+}

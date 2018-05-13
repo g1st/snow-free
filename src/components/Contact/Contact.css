@@ -1,0 +1,74 @@
+@value colors: '../../style.css';
+@value black from colors;
+@value grey-dark from colors;
+.Contact {
+  background-color: rgb(247, 247, 247);
+}
+
+.Wrapper {
+  background-color: rgb(247, 247, 247);
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  padding-top: 50px;
+}
+
+.Info {
+  text-align: left;
+  margin: 0 10px;
+}
+
+.Form {
+  width: 100%;
+}
+
+.Heading {
+  color: black;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.Paragraph {
+  color: grey-dark;
+  margin-bottom: 30px;
+  line-height: 24px;
+  max-width: 740px;
+}
+
+.ParagraphInfo {
+  color: grey-dark;
+  margin-bottom: 10px;
+}
+
+.ParagraphInfo strong {
+  color: black;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 760px) {
+  .Wrapper {
+    max-width: 700px;
+  }
+  .ParagraphInfo {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Wrapper {
+    max-width: 1200px;
+    flex-flow: row;
+  }
+  .Info {
+    width: 50%;
+  }
+  .Form {
+    width: 50%;
+  }
+  .Heading {
+    margin-bottom: 40px;
+    font-size: 2.65rem;
+  }
+}
