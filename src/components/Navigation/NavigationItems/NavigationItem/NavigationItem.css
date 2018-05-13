@@ -1,6 +1,6 @@
 @value colors: "../../../../style.css";
-@value grey-dark, grey-light from colors;
-
+@value grey-dark from colors;
+@value grey-light from colors;
 .NavigationItem {
   display: block;
   margin-right: 20px;

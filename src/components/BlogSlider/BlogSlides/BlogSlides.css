@@ -1,6 +1,6 @@
 @value colors: '../../../style.css';
-@value black, grey-dark from colors;
-
+@value black from colors;
+@value grey-dark from colors;
 .BlogSlides {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,6 +22,17 @@
 
 .CardImage {
   position: relative;
+  cursor: pointer;
+  /* z-index: -1; */
+}
+
+.CardImage img {
+  opacity: 1;
+  transition: opacity .2s ease;
+}
+
+.CardImage img:hover {
+  opacity: 0.8;
 }
 
 .CardTag {
@@ -31,10 +42,12 @@
   left: 3%;
   color: #fff;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(65, 65, 65);
   text-align: left;
   font-size: 0.9rem;
   letter-spacing: 1px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .Heading {
@@ -42,6 +55,7 @@
   color: black;
   font-size: 1.6rem;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .Paragraph {
