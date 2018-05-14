@@ -6,8 +6,8 @@ import classes from './Form.css';
 
 const theme = createMuiTheme({
   palette: {
-    primary: { main: '#252525' },
-  },
+    primary: { main: '#252525' }
+  }
 });
 
 class Form extends Component {
@@ -15,7 +15,7 @@ class Form extends Component {
     textarea: '',
     name: '',
     email: '',
-    title: '',
+    title: ''
   };
 
   handleChange(event) {
@@ -34,6 +34,7 @@ class Form extends Component {
           <div className={classes.Row}>
             <input
               className={classes.Name}
+              required
               type="text"
               name="name"
               placeholder="Your Name"
@@ -42,6 +43,7 @@ class Form extends Component {
             />
             <input
               className={classes.Email}
+              required
               type="email"
               name="email"
               placeholder="Your Email"
@@ -62,6 +64,7 @@ class Form extends Component {
             placeholder="Your Comment"
             rows="8"
             onChange={e => this.handleChange(e)}
+            required
           />
           <div className={classes.Button}>
             <MuiThemeProvider theme={theme}>
