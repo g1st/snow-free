@@ -1,10 +1,12 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import Form from './Form/Form';
 
 import classes from './Contact.css';
 
 const contact = () => (
   <div className={classes.Contact}>
+    <Element name="scrollToContact" />
     <div className={classes.Wrapper}>
       <div className={classes.Info}>
         <h1 className={classes.Heading}>Contact Info:</h1>
