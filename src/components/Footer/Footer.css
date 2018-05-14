@@ -1,0 +1,45 @@
+@value colors: '../../style.css';
+@value white-dark from colors;
+@value grey-dark from colors;
+@value black from colors;
+.Footer {
+  background-color: white-dark;
+  padding: 35px 0;
+}
+
+.Container {
+  font-size: 1rem;
+  color: grey-light;
+  display: flex;
+  justify-content: center;
+}
+
+.Social {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Link {
+  display: flex;
+  transition: color .3s ease;
+  padding: 0 10px;
+}
+
+.Link a {
+  color: rgb(124, 124, 124);
+}
+
+.Link a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.Credits {
+  padding: 30px 5px 15px 5px;
+  color: grey-dark;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}

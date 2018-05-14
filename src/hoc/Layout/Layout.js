@@ -9,6 +9,7 @@ import Testimonials from '../../components/Testimonials/Testimonials';
 import ClientsSlider from '../../components/ClientsSlider/ClientsSlider';
 import BlogSlider from './../../components/BlogSlider/BlogSlider';
 import Contact from '../../components/Contact/Contact';
+import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class Layout extends Component {
 
   menuClickHandler = () => {
     this.setState(prevState => ({
-      showDropdownMenu: !prevState.showDropdownMenu
+      showDropdownMenu: !prevState.showDropdownMenu,
     }));
   };
 
@@ -51,6 +52,7 @@ class Layout extends Component {
           <ClientsSlider width={this.state.width} />
           <BlogSlider width={this.state.width} />
           <Contact />
+          <Footer />
           <div>{this.props.children}</div>
         </div>
       </Fragment>
