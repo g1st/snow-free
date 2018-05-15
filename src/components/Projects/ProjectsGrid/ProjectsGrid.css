@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.ExtraMargin {
+  padding: 200px 0;
+}
+
 .Container {
   display: grid;
   width: 100%;
@@ -93,9 +97,11 @@
 .Dark:hover .Overlay {
   opacity: 1;
 }
+
 .Dark:hover .Heading {
   animation: GridCellTextUp 0.5s ease forwards;
 }
+
 .Dark:hover .Info {
   animation: GridCellTextUp 0.5s 0.1s ease forwards;
 }

@@ -10,20 +10,37 @@ const NavigationItems = (props) => {
     : classes.NavigationItems;
   return (
     <ul className={attachedClasses}>
-      <Link to="scrollToAbout" smooth duration={500} offset={-100}>
-        <NavigationItem inDropdown={props.inDropdown} showDark={props.showDark}>
-          About
-        </NavigationItem>
-      </Link>
-      <Link to="scrollToContact" smooth duration={500} offset={-100}>
-        <NavigationItem inDropdown={props.inDropdown} showDark={props.showDark}>
-          Contact
-        </NavigationItem>
-      </Link>
-      <NavigationItem inDropdown={props.inDropdown} showDark={props.showDark}>
+      {/* <Link to="scrollToAbout" smooth duration={500} offset={-100}> */}
+      <NavigationItem
+        inDropdown={props.inDropdown}
+        showDark={props.showDark}
+        link="/"
+        scrollTo="/scrollToAbout"
+      >
+        About
+      </NavigationItem>
+      {/* </Link> */}
+      {/* <Link to="scrollToContact" smooth duration={500} offset={-100}> */}
+      <NavigationItem
+        inDropdown={props.inDropdown}
+        showDark={props.showDark}
+        link="/"
+      >
+        Contact
+      </NavigationItem>
+      {/* </Link> */}
+      <NavigationItem
+        inDropdown={props.inDropdown}
+        showDark={props.showDark}
+        link="/portfolio"
+      >
         Portfolio
       </NavigationItem>
-      <NavigationItem inDropdown={props.inDropdown} showDark={props.showDark}>
+      <NavigationItem
+        inDropdown={props.inDropdown}
+        showDark={props.showDark}
+        link="/blog"
+      >
         Blog
       </NavigationItem>
       <a href="https://www.google.com/">
