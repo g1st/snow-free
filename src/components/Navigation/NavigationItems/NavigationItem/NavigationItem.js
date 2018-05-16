@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 
 import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 import classes from './NavigationItem.css';
 
@@ -19,7 +19,9 @@ const navigationItem = (props) => {
   if (props.link) {
     item = (
       <li className={attachedClasses.join(' ')}>
-        <NavLink to={props.link}>{props.children}</NavLink>
+        <NavLink to={props.link} activeClassName={classes.Active}>
+          {props.children}
+        </NavLink>
       </li>
     );
   }
@@ -27,11 +29,13 @@ const navigationItem = (props) => {
   if (props.scrollTo) {
     item = (
       <li className={attachedClasses.join(' ')}>
-        <NavLink to={props.link}>
-          <Link to="scrollToAbout" smooth duration={500} offset={-100}>
-            {props.children}
-          </Link>
-        </NavLink>
+        <NavHashLink
+          to={props.scrollTo}
+          activeClassName={classes.Active}
+          smooth
+        >
+          {props.children}
+        </NavHashLink>
       </li>
     );
   }

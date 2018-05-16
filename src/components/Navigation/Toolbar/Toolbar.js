@@ -8,10 +8,11 @@ import Dropdown from '../Dropdown/Dropdown';
 
 class Toolbar extends Component {
   state = {
-    scrolledDown: false,
+    scrolledDown: false
   };
 
   componentDidMount() {
+    console.log(this.props);
     return window.addEventListener('scroll', this.handleScroll);
   }
 

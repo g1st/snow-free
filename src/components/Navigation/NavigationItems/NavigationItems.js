@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import NavigationItem from './NavigationItem/NavigationItem';
 
 import classes from './NavigationItems.css';
@@ -10,25 +9,22 @@ const NavigationItems = (props) => {
     : classes.NavigationItems;
   return (
     <ul className={attachedClasses}>
-      {/* <Link to="scrollToAbout" smooth duration={500} offset={-100}> */}
       <NavigationItem
         inDropdown={props.inDropdown}
         showDark={props.showDark}
         link="/"
-        scrollTo="/scrollToAbout"
+        scrollTo="/#about"
       >
         About
       </NavigationItem>
-      {/* </Link> */}
-      {/* <Link to="scrollToContact" smooth duration={500} offset={-100}> */}
       <NavigationItem
         inDropdown={props.inDropdown}
         showDark={props.showDark}
         link="/"
+        scrollTo="/#contact"
       >
         Contact
       </NavigationItem>
-      {/* </Link> */}
       <NavigationItem
         inDropdown={props.inDropdown}
         showDark={props.showDark}
@@ -43,11 +39,6 @@ const NavigationItems = (props) => {
       >
         Blog
       </NavigationItem>
-      <a href="https://www.google.com/">
-        <NavigationItem inDropdown={props.inDropdown} showDark={props.showDark}>
-          Google
-        </NavigationItem>
-      </a>
     </ul>
   );
 };

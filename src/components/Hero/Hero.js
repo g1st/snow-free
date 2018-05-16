@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'material-ui/Button';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import { Link } from 'react-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import classes from './Hero.css';
 
@@ -27,7 +27,7 @@ const hero = () => (
         </div>
       </div>
     </div>
-    <Link to="scrollToAbout" smooth duration={500} offset={-100}>
+    <Link to="/#about" smooth>
       <div className={classes.ScrollDown}>v</div>
     </Link>
   </div>

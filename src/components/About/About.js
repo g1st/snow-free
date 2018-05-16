@@ -1,11 +1,9 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 
 import classes from './About.css';
 
 const about = () => (
-  <section className={classes.About}>
-    <Element name="scrollToAbout" />
+  <section className={classes.About} id="about">
     <div className={classes.Wrapper}>
       <div className={classes.Heading}>About Our Agency</div>
       <p className={classes.Paragraph}>

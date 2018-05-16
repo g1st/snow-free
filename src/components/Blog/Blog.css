@@ -1,0 +1,5 @@
+.Blog {
+  padding: 200px 50px;
+  height: calc(100vh - 185px);
+  background-color: rgb(240, 240, 240);
+}

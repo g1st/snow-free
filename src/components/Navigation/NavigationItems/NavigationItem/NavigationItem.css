@@ -1,40 +1,46 @@
 @value colors: "../../../../style.css";
 @value grey-dark from colors;
 @value grey-light from colors;
-.NavigationItem {
+.NavigationItem a {
   display: block;
   margin-right: 20px;
   text-transform: uppercase;
   color: grey-light;
   letter-spacing: 2px;
+  text-decoration: none;
   user-select: none;
   transition: color 0.2s ease-out;
 }
 
-.NavigationItem:hover {
+.NavigationItem a:hover {
   cursor: pointer;
   color: #fff;
 }
 
-.NavigationItemInDropdown {
+.NavigationItemInDropdown a {
   display: block;
   color: grey-light;
+  text-decoration: none;
   letter-spacing: 2px;
   text-align: center;
   display: flex;
   transition: color 0.2s ease-out;
 }
 
-.NavigationItemInDropdown:hover {
+.NavigationItemInDropdown a:hover {
   cursor: pointer;
   color: #fff;
 }
 
-.DarkTextColor {
+.DarkTextColor a {
   color: grey-dark;
   transition: color 0.2s ease-out;
 }
 
-.DarkTextColor:hover {
+.DarkTextColor a:hover {
   color: #000;
+}
+
+.Active {
+  color: #000 !important;
 }

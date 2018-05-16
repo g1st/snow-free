@@ -7,10 +7,6 @@
   flex-direction: column;
 }
 
-.ExtraMargin {
-  padding: 200px 0;
-}
-
 .Container {
   display: grid;
   width: 100%;
