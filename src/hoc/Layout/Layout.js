@@ -13,7 +13,7 @@ class Layout extends Component {
 
   menuClickHandler = () => {
     this.setState(prevState => ({
-      showDropdownMenu: !prevState.showDropdownMenu
+      showDropdownMenu: !prevState.showDropdownMenu,
     }));
   };
 

@@ -16,7 +16,7 @@ const dropdown = (props) => {
     <Fragment>
       <Backdrop show={props.inDropdown}>
         <nav className={attachedClassess.join(' ')}>
-          <NavigationItems inDropdown />
+          <NavigationItems inDropdown toggleBackdrop={props.onClickHamburger} />
         </nav>
         <Footer />
       </Backdrop>

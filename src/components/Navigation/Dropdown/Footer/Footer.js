@@ -1,21 +1,27 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook';
+import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faCodepen from '@fortawesome/fontawesome-free-brands/faCodepen';
 import classes from './Footer.css';
 
 const footer = () => (
   <div className={classes.Container}>
     <ul className={classes.Social}>
-      <li>
-        <FontAwesomeIcon icon={faTwitter} />
+      <li className={classes.Link}>
+        <a href="https://twitter.com/g1stas">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
       </li>
-      <li>
-        <FontAwesomeIcon icon={faFacebook} />
+      <li className={classes.Link}>
+        <a href="https://codepen.io/g1st">
+          <FontAwesomeIcon icon={faCodepen} />
+        </a>
       </li>
-      <li>
-        <FontAwesomeIcon icon={faCodepen} />
+      <li className={classes.Link}>
+        <a href="https://github.com/g1st/snow-free">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
       </li>
     </ul>
   </div>

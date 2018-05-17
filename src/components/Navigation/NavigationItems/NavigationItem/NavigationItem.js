@@ -19,7 +19,11 @@ const navigationItem = (props) => {
   if (props.link) {
     item = (
       <li className={attachedClasses.join(' ')}>
-        <NavLink to={props.link} activeClassName={classes.Active}>
+        <NavLink
+          to={props.link}
+          activeClassName={classes.Active}
+          onClick={props.toggleBackdrop}
+        >
           {props.children}
         </NavLink>
       </li>
@@ -33,6 +37,7 @@ const navigationItem = (props) => {
           to={props.scrollTo}
           activeClassName={classes.Active}
           smooth
+          onClick={props.toggleBackdrop}
         >
           {props.children}
         </NavHashLink>

@@ -1,6 +1,5 @@
 @value colors: '../../../../style.css';
 @value grey-light from colors;
-
 .Container {
   font-size: 1rem;
   color: grey-light;
@@ -26,6 +25,21 @@
 }
 
 .Social li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.Link {
+  display: flex;
+  transition: color .3s ease;
+  padding: 0 10px;
+}
+
+.Link a {
+  color: rgb(219, 219, 219);
+}
+
+.Link a:hover {
   color: #fff;
   cursor: pointer;
 }

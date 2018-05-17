@@ -14,6 +14,7 @@ const NavigationItems = (props) => {
         showDark={props.showDark}
         link="/"
         scrollTo="/#about"
+        toggleBackdrop={props.toggleBackdrop}
       >
         About
       </NavigationItem>
@@ -22,6 +23,7 @@ const NavigationItems = (props) => {
         showDark={props.showDark}
         link="/"
         scrollTo="/#contact"
+        toggleBackdrop={props.toggleBackdrop}
       >
         Contact
       </NavigationItem>
@@ -29,6 +31,7 @@ const NavigationItems = (props) => {
         inDropdown={props.inDropdown}
         showDark={props.showDark}
         link="/portfolio"
+        toggleBackdrop={props.toggleBackdrop}
       >
         Portfolio
       </NavigationItem>
@@ -36,6 +39,7 @@ const NavigationItems = (props) => {
         inDropdown={props.inDropdown}
         showDark={props.showDark}
         link="/blog"
+        toggleBackdrop={props.toggleBackdrop}
       >
         Blog
       </NavigationItem>

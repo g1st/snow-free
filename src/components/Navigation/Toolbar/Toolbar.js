@@ -8,11 +8,10 @@ import Dropdown from '../Dropdown/Dropdown';
 
 class Toolbar extends Component {
   state = {
-    scrolledDown: false
+    scrolledDown: false,
   };
 
   componentDidMount() {
-    console.log(this.props);
     return window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -44,7 +43,10 @@ class Toolbar extends Component {
             menuOpen={this.props.menuOpen}
             onClickHamburger={this.props.onClickHamburger}
           />
-          <Dropdown inDropdown={this.props.menuOpen} />
+          <Dropdown
+            inDropdown={this.props.menuOpen}
+            onClickHamburger={this.props.onClickHamburger}
+          />
           {this.props.menuOpen ? null : (
             <nav className={classes.DesktopOnly}>
               <NavigationItems showDark={this.state.scrolledDown} />
