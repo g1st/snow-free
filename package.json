@@ -1,6 +1,7 @@
 {
   "name": "snow-free",
   "version": "1.0.0",
+  "homepage": "https://g1st.github.io/snow-free/",
   "description": "",
   "main": "index.js",
   "scripts": {
