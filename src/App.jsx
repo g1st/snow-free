@@ -6,7 +6,7 @@ import Routes from './Routes';
 import Layout from './hoc/Layout/Layout';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/snow-free">
     <Layout>
       <ScrollToTop />
       <Routes />
