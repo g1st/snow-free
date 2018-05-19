@@ -11,7 +11,7 @@ const NavigationItems = (props) => {
     <ul className={attachedClasses}>
       <NavigationItem
         inDropdown={props.inDropdown}
-        showDark={props.showDark}
+        showDark={props.static ? true : props.showDark}
         link="/"
         scrollTo="/#about"
         toggleBackdrop={props.toggleBackdrop}
@@ -20,7 +20,7 @@ const NavigationItems = (props) => {
       </NavigationItem>
       <NavigationItem
         inDropdown={props.inDropdown}
-        showDark={props.showDark}
+        showDark={props.static ? true : props.showDark}
         link="/"
         scrollTo="/#contact"
         toggleBackdrop={props.toggleBackdrop}
@@ -29,7 +29,7 @@ const NavigationItems = (props) => {
       </NavigationItem>
       <NavigationItem
         inDropdown={props.inDropdown}
-        showDark={props.showDark}
+        showDark={props.static ? true : props.showDark}
         link="/portfolio"
         toggleBackdrop={props.toggleBackdrop}
       >
@@ -37,7 +37,7 @@ const NavigationItems = (props) => {
       </NavigationItem>
       <NavigationItem
         inDropdown={props.inDropdown}
-        showDark={props.showDark}
+        showDark={props.static ? true : props.showDark}
         link="/blog"
         toggleBackdrop={props.toggleBackdrop}
       >

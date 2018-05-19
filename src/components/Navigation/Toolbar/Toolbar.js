@@ -9,20 +9,34 @@ import Dropdown from '../Dropdown/Dropdown';
 class Toolbar extends Component {
   state = {
     scrolledDown: false,
+    menuOpen: false,
   };
 
   componentDidMount() {
-    return window.addEventListener('scroll', this.handleScroll);
+    return this.props.static
+      ? null
+      : window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    return window.removeEventListener('scroll', this.handleScroll);
+    return this.props.static
+      ? null
+      : window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
-    const scrolledDown = +window.scrollY > 100;
+    if (!this.props.static) {
+      const scrolledDown = +window.scrollY > 100;
 
-    return this.setState({ scrolledDown });
+      return this.setState({ scrolledDown });
+    }
+    return null;
+  };
+
+  menuClickHandler = () => {
+    this.setState(prevState => ({
+      menuOpen: !prevState.menuOpen,
+    }));
   };
 
   render() {
@@ -32,24 +46,32 @@ class Toolbar extends Component {
       attachedClasses.push(classes.ToolbarWhite);
     }
 
+    if (this.props.static) {
+      attachedClasses.push(classes.StaticToolbar);
+    }
+
     return (
       <header className={attachedClasses.join(' ')}>
         <div className={classes.Wrapper}>
           <Logo
             showDark={this.state.scrolledDown}
-            menuOpen={this.props.menuOpen}
+            menuOpen={this.state.menuOpen}
+            static={this.props.static}
           />
           <Hamburger
-            menuOpen={this.props.menuOpen}
-            onClickHamburger={this.props.onClickHamburger}
+            menuOpen={this.state.menuOpen}
+            onClickHamburger={this.menuClickHandler}
           />
           <Dropdown
-            inDropdown={this.props.menuOpen}
-            onClickHamburger={this.props.onClickHamburger}
+            inDropdown={this.state.menuOpen}
+            onClickHamburger={this.menuClickHandler}
           />
-          {this.props.menuOpen ? null : (
+          {this.state.menuOpen ? null : (
             <nav className={classes.DesktopOnly}>
-              <NavigationItems showDark={this.state.scrolledDown} />
+              <NavigationItems
+                showDark={this.state.scrolledDown}
+                static={this.props.static}
+              />
             </nav>
           )}
         </div>

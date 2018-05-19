@@ -11,6 +11,12 @@
   transition: background-color 0.3s ease;
 }
 
+.StaticToolbar {
+  position: static;
+  top: 0;
+  background-color: #fff;
+}
+
 .ToolbarWhite {
   background-color: #fff;
 }

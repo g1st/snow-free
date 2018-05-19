@@ -21,7 +21,9 @@ const navigationItem = (props) => {
       <li className={attachedClasses.join(' ')}>
         <NavLink
           to={props.link}
-          activeClassName={classes.Active}
+          activeClassName={
+            props.inDropdown ? classes.ActiveInDropdown : classes.Active
+          }
           onClick={props.toggleBackdrop}
         >
           {props.children}
@@ -35,9 +37,14 @@ const navigationItem = (props) => {
       <li className={attachedClasses.join(' ')}>
         <NavHashLink
           to={props.scrollTo}
-          activeClassName={classes.Active}
+          activeClassName={
+            props.inDropdown ? classes.ActiveInDropdown : classes.Active
+          }
           smooth
           onClick={props.toggleBackdrop}
+          isActive={() =>
+            window.location.pathname + window.location.hash === props.scrollTo
+          }
         >
           {props.children}
         </NavHashLink>

@@ -43,3 +43,13 @@
   display: block;
   margin: 0 auto;
 }
+
+.Credits a {
+  text-decoration: none;
+  color: black;
+}
+
+.Credits a:hover {
+  text-decoration: none;
+  color: #000;
+}

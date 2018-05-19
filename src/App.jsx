@@ -5,7 +5,7 @@ import ScrollToTop from './hoc/ScrollToTop';
 import Routes from './Routes';
 import Layout from './hoc/Layout/Layout';
 
-const App = props => (
+const App = () => (
   <BrowserRouter>
     <Layout>
       <ScrollToTop />
