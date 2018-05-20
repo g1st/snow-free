@@ -43,7 +43,8 @@ const navigationItem = (props) => {
           smooth
           onClick={props.toggleBackdrop}
           isActive={() =>
-            window.location.pathname + window.location.hash === props.scrollTo
+            window.location.pathname + window.location.hash ===
+            `/snow-free${props.scrollTo}`
           }
         >
           {props.children}
