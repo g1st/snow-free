@@ -1,6 +1,6 @@
 @value colors: '../../style.css';
-@value black, white-dark from colors;
-
+@value black from colors;
+@value white-dark from colors;
 .Brag {
   background-color: black;
   height: 400px;
@@ -49,15 +49,13 @@
   .Brag {
     height: auto;
   }
-
   .Wrapper {
-    width: 760px;
+    max-width: 760px;
     max-width: 1200px;
     height: unset;
     flex-flow: wrap;
     justify-content: space-around;
   }
-
   .IconWrapper {
     margin: 10px 0;
     padding: 10px;
@@ -67,7 +65,7 @@
 
 @media (min-width: 1000px) {
   .Wrapper {
-    width: 100%;
+    max-width: 1000px;
   }
   .IconWrapper {
     width: 240px;
