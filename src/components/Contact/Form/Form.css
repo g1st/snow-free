@@ -5,20 +5,29 @@
 .Row {
   display: flex;
   flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 input {
   box-sizing: border-box;
   display: block;
+  min-width: 0;
   width: 100%;
   padding: 15px 20px;
   margin-bottom: 30px;
   border: none;
   letter-spacing: 1px;
   outline: none;
+  font-size: 16px;
+}
+
+input:invalid {
+  box-shadow: none;
 }
 
 textarea {
+  font-size: 16px;
   letter-spacing: 1px;
   outline: none;
   border: none;
@@ -27,6 +36,10 @@ textarea {
   max-width: 100%;
   padding: 15px 20px;
   margin-bottom: 30px;
+}
+
+textarea:invalid {
+  box-shadow: none;
 }
 
 @media (min-width: 760px) {
@@ -38,5 +51,11 @@ textarea {
   }
   .Row {
     flex-flow: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Row {
+    max-width: 570px;
   }
 }
