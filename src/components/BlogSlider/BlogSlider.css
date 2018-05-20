@@ -1,11 +1,13 @@
 @value colors: '../../style.css';
-@value white-dark, black, grey-dark from colors;
-
+@value white-dark,
+black,
+grey-dark from colors;
 .BlogSlider {
   background-color: rgb(245, 245, 245);
   color: black;
   height: 100%;
   width: 100%;
+  padding-bottom: 1px;
 }
 
 .Container {
