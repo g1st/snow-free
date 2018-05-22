@@ -1,6 +1,5 @@
 @value colors: '../../style.css';
 @value grey-light from colors;
-
 .Hero {
   max-height: 1200px;
   min-height: 550px;
@@ -10,8 +9,7 @@
 }
 
 .Background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/benjamin-child-90768-unsplash.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/benjamin-child-90768-unsplash.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,7 +88,6 @@
   .Container {
     transform: translateY(50%);
   }
-
   .ScrollDown {
     margin: -114px auto 0;
   }
