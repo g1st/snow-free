@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPost component matches snapshot 1`] = `
+<div
+  className="Wrapper"
+>
+  <div
+    className="Card"
+  >
+    <div
+      className="CardContent"
+    >
+      <div
+        className="CardInner"
+      >
+        <div
+          className="CardImage"
+        >
+          <img
+            alt="Blog post"
+            src="image"
+          />
+          <div
+            className="CardTag"
+          >
+            John
+          </div>
+        </div>
+        <h1
+          className="Heading"
+        >
+          Lorem Ipsum
+        </h1>
+        <span
+          className="Date"
+        >
+          August 14, 2018
+        </span>
+        <div
+          className="Paragraph"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
