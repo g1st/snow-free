@@ -1,11 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
 import Form from './Form.js';
 
-describe('Form component renders the form correctly', () => {
-  it('renders correctly', () => {
-    const rendered = renderer.create(<Form />);
-    expect(rendered.toJSON()).toMatchSnapshot();
+describe('Form component', () => {
+  it('matches snapshot', () => {
+    const wrapper = shallow(<Form />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
