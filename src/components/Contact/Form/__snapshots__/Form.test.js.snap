@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders the form correctly renders correctly 1`] = `
+<div
+  className="Form"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="Row"
+    >
+      <input
+        className="Name"
+        name="name"
+        onChange={[Function]}
+        placeholder="Your Name"
+        required={true}
+        type="text"
+        value=""
+      />
+      <input
+        className="Email"
+        name="email"
+        onChange={[Function]}
+        placeholder="Your Email"
+        required={true}
+        type="email"
+        value=""
+      />
+    </div>
+    <input
+      name="title"
+      onChange={[Function]}
+      placeholder="Your Title"
+      type="text"
+      value=""
+    />
+    <textarea
+      name="textarea"
+      onChange={[Function]}
+      placeholder="Your Comment"
+      required={true}
+      rows="8"
+      value=""
+    />
+    <div
+      className="Button"
+    >
+      <button
+        className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-raisedPrimary-7 MuiButton-sizeLarge-14"
+        disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="submit"
+      >
+        <span
+          className="MuiButton-label-2"
+        >
+          Send message
+        </span>
+        <span
+          className="MuiTouchRipple-root-19"
+        />
+      </button>
+    </div>
+  </form>
+</div>
+`;
